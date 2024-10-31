@@ -10,7 +10,7 @@ public:
             auto pos = window.lower_bound((long)nums[i] - valueDiff);
      
             if (pos != window.end() && *pos <= (long)nums[i] + valueDiff) {
-                return true; // If found, return true
+                return true;
             }
             window.insert(nums[i]); 
         }
